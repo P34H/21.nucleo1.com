@@ -33,6 +33,7 @@
   text-transform: uppercase;
   color: #fff;
   margin: 0;
+  line-height: 1.4;
 }
 
 /* ─── STICKY NAV ────────────────────────────── */
@@ -47,12 +48,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 .stickyLogo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 1.1rem;
   color: #FF4500;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .stickyLogoSpan { color: #f0f0f0; }
 
@@ -631,6 +635,14 @@
 
   /* Global */
   .wrapper { --pad: 5%; padding-bottom: 76px; }
+
+  /* Topbar */
+  .topbarText { font-size: 0.68rem; letter-spacing: 0.08em; }
+
+  /* Nav */
+  .stickyNav { padding: 10px var(--pad); }
+  .stickyLogo { font-size: 1rem; }
+  .btnSm { font-size: 0.68rem; padding: 8px 14px; white-space: nowrap; }
 
   /* Hero */
   .hero {
